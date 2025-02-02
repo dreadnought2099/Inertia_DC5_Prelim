@@ -21,8 +21,8 @@ defineProps( {
 
 <template>
     <div class="flex">
-        <nav class="min-h-screen w-[20%] shadow-lg border-r border-gray-200">
-            <h2 class="text-center text-2xl font-semibold my-3">
+        <nav class="min-h-screen w-[20%] shadow-lg border-b border-gray-200">
+            <h2 class="text-center text-2xl font-semibold my-3 bg-blue-400 text-white">
                 <Link href="/products" prefetch class="hover:underline">Categories</Link>
             </h2>
             <ul>
@@ -38,7 +38,7 @@ defineProps( {
 
 
         <div class="w-3/4 px-3">
-            <h1  class="text-center text-2xl font-semibold my-3">{{ selectedCategory? selectedCategory.name: "All Products" }}</h1>
+            <h1  class="text-center text-2xl font-semibold my-3 bg-blue-400 text-white">{{ selectedCategory? selectedCategory.name: "All Products" }}</h1>
             <div class="grid grid-cols-3 gap-3">
                 <div v-for="product in products" :key="product.id">
                    <div class="shadow-lg p-2 rounded-lg animation-bounce text-sm hover:bg-gray-400 duration-500 cursor-pointer">

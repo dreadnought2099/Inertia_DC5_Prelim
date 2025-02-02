@@ -13,7 +13,7 @@ defineProps({
 <template>
 
     <div class="min-h-screen w-full flex flex-col items-center gap-3 py-5">
-        <h1 class="text-4xl text-center font-semibold">Categories</h1>
+        <h1 class="text-4xl text-center font-semibold bg-blue-400 text-white">Categories</h1>
         <table class="table-fixed border-collapse border border-slate-400 p-2">
             <thead class="bg-blue-400 text-white/80">
                 <tr>
