@@ -22,20 +22,21 @@ defineProps( {
 <template>
     <div class="flex">
         <nav class="min-h-screen w-[20%] shadow-lg">
-
-            <h2  class="text-center text-2xl font-semibold my-3">
-
-            <Link href="/products">Categories</Link>
-
+            <h2 class="text-center text-2xl font-semibold my-3">
+                <Link href="/products" prefetch>Categories</Link>
             </h2>
-            <ul v-for="category in categories" :key="category.id" >
-                <li class=" p-2 cursor-pointer hover:bg-slate-600 hover:text-slate-300 duration-100">
-                    <Link :href='"/products/"+ category.id' class="w-full ">
-                    {{ category.name }}
+            <ul>
+                <li v-for="category in categories" :key="category.id" class="p-2 cursor-pointer hover:bg-slate-600 hover:text-slate-300 duration-50">
+                    <Link :href='"/products/"+ category.id' class="w-full" :preserve-state="true" prefetch>
+                        <div class="w-full">
+                            {{ category.name }}
+                        </div>
                     </Link>
                 </li>
             </ul>
         </nav>
+
+
 
         <div class="w-3/4 px-3">
             <h1  class="text-center text-2xl font-semibold my-3">{{ selectedCategory? selectedCategory.name: "All Products" }}</h1>
