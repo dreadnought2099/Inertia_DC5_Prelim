@@ -12,8 +12,8 @@ defineProps( {
     required:true
  },
  selectedCategory:{
-    type:String,
-    required:true
+    type:Object,
+    required:null
  }
 })
 
