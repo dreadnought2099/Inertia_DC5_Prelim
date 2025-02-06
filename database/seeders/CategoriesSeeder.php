@@ -13,16 +13,16 @@ class CategoriesSeeder extends Seeder
     public function run(): void
     {
         $categories = [
-            ['name' => 'Fashion & Apparel', 'description' => 'Clothing, footwear, and accessories'],
-            ['name' => 'Electronics & Gadgets', 'description' => 'Mobile phones, laptops, and accessories'],
-            ['name' => 'Health & Beauty', 'description' => 'Cosmetics, skincare, and wellness products'],
-            ['name' => 'Home & Living', 'description' => 'Furniture, home decor, and appliances'],
-            ['name' => 'Sports & Fitness', 'description' => 'Sportswear, gym equipment, and accessories'],
-            ['name' => 'Food & Beverages', 'description' => 'Restaurants, cafés, and specialty food stores'],
-            ['name' => 'Toys & Games', 'description' => 'Children’s toys, board games, and hobby shops'],
-            ['name' => 'Books & Stationery', 'description' => 'Bookstores, school supplies, and office essentials'],
-            ['name' => 'Entertainment & Leisure', 'description' => 'Cinemas, arcades, and activity centers'],
-            ['name' => 'Automotive & Accessories', 'description' => 'Car accessories, motorcycle gear, and services'],
+            ['name' => 'Electronics & Gadgets', 'description' => 'Latest gadgets and tech for a connected life.'],
+            ['name' => 'Home Appliances', 'description' => 'Enhance comfort with modern home appliances.'],
+            ['name' => 'FAshion & Apparel', 'description' => 'Stylish clothing, shoes, and accessories.'],
+            ['name' => 'Beauty and Personal Care', 'description' => 'Skincare, haircare, and cosmetics for a polished look.'],
+            ['name' => 'Sports and Outdoors', 'description' => 'Gear for fitness and outdoor adventures.'],
+            ['name' => 'Toys and Games', 'description' => 'Fun and educational toys for all ages.'],
+            ['name' => 'Books and Entertainment Media', 'description' => 'Latest books, movies, and music.'],
+            ['name' => 'Health and Wellness', 'description' => 'Products to support a healthy lifestyle.'],
+            ['name' => 'Automotive & Garage', 'description' => 'Car care, accessories, and replacement parts.'],
+            ['name' => 'Groceries and Gourmet Food', 'description' => 'Everyday essentials and gourmet treats.'],
         ];
 
         foreach($categories as $category) {
